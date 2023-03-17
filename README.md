@@ -40,4 +40,12 @@ The self join concept is used to combine data from a table with itself. It is of
 ### Cross Join
 cross_join.sql: A file containing examples of how to use the CROSS JOIN operator in SQL to create a cartesian product of two or more tables.
 The cross join concept is used to combine all the rows from one table with all the rows from another table. It returns a Cartesian product of the two tables.
+### UNION
+The UNION operator is used to combine the results of two or more SELECT statements into a single result set. The columns in each SELECT statement must have the same data types and be in the same order. The UNION operator removes duplicate rows from the result set.
+### UNION ALL
+The UNION ALL operator is similar to the UNION operator, except that it does not remove duplicate rows from the result set. The columns in each SELECT statement must have the same data types and be in the same order.
+### INTERSECT
+The INTERSECT operator is used to return only the rows that are common to two SELECT statements. The columns in each SELECT statement must have the same data types and be in the same order. The INTERSECT operator removes duplicate rows from the result set.
+### EXCEPT
+The EXCEPT operator is used to return only the rows that are unique to one SELECT statement and not found in another SELECT statement. The columns in each SELECT statement must have the same data types and be in the same order. The EXCEPT operator removes duplicate rows from the result set.
 
