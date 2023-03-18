@@ -48,4 +48,13 @@ The UNION ALL operator is similar to the UNION operator, except that it does not
 The INTERSECT operator is used to return only the rows that are common to two SELECT statements. The columns in each SELECT statement must have the same data types and be in the same order. The INTERSECT operator removes duplicate rows from the result set.
 ### EXCEPT
 The EXCEPT operator is used to return only the rows that are unique to one SELECT statement and not found in another SELECT statement. The columns in each SELECT statement must have the same data types and be in the same order. The EXCEPT operator removes duplicate rows from the result set.
-
+### Antijoin
+Antijoin is a type of join operation in SQL that returns only the rows from one table that do not have matching rows in the other table. Antijoin is achieved using the NOT EXISTS or NOT IN operator, which compares a column value from one table with a column value from another table. Antijoin is useful for identifying data that does not conform to expected patterns or that needs to be corrected.
+### Subqueries inside SELECT
+A subquery is a query that is nested inside another query. In SQL, a subquery can be used inside the SELECT clause to retrieve a single value or set of values that can be used as a column in the outer query. Subqueries inside SELECT are useful for performing calculations or retrieving data that is based on values in other tables or columns.
+### Subqueries inside FROM
+A subquery can also be used inside the FROM clause to create a temporary table that is used in the outer query. This type of subquery is known as a derived table or inline view. Subqueries inside FROM are useful for simplifying complex queries or when a table needs to be filtered or joined with other tables before being used in the outer query.
+### Subqueries inside WHERE
+Subqueries can also be used inside the WHERE clause to filter results based on the values of a subquery. Subqueries inside WHERE are useful for selecting specific rows based on values in other tables or columns. The subquery can be used to retrieve a set of values that are then used to filter the main query results.
+### Semijoin
+Semijoin is a type of join operation in SQL that returns only the rows from one table that have matching rows in another table. However, unlike a regular join, semijoin eliminates any duplicates from the result set. Semijoin is useful for retrieving only the unique rows from one table that have a matching value in another table. Semijoin can be achieved using the EXISTS or IN operator, which checks for the existence of a value in another table.
